@@ -1,0 +1,226 @@
+@font-face {
+  font-family: Karma;
+  src: url(/fonts/Karma-medium.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: medium;
+}
+
+body {
+  background-color: rgb(239, 239, 239);
+}
+nav {
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+}
+
+#whiteBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(239, 239, 239);
+  height: 12vh;
+}
+
+#blueBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(66, 137, 138);
+  height: 6vh;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgb(23, 23, 23);
+}
+
+h1 {
+  padding-top: 5px;
+  font-size: 1.25em;
+  font-family: Karma;
+  letter-spacing: 8px;
+  color: white;
+}
+
+.fa-instagram-square {
+  font-size: 250%;
+  margin-left: 2vw;
+  color: rgb(23, 23, 23);
+}
+
+.fa-facebook-square {
+  font-size: 250%;
+  margin-left: 1vw;
+  color: rgb(23, 23, 23);
+}
+
+.toggle-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 0.8vh;
+  margin-right: 2vw;
+  width: 40px;
+  height: 35px;
+  z-index: 10;
+}
+.toggle-button:hover {
+  cursor: pointer;
+}
+
+.bar {
+  height: 6px;
+  width: 90%;
+  background-color: rgb(23, 23, 23);
+  border-radius: 50px;
+  z-index: 10;
+}
+
+.navBarList {
+  position: absolute;
+  top: 0vw;
+  right: 0vw;
+  width: 200px;
+  height: 100vh;
+  background-color: rgb(239, 239, 239);
+  color: rgb(66, 137, 138);
+  z-index: 9;
+  box-shadow: 0px 2px 3px rgb(23, 23, 23);
+}
+
+.navBarList ul {
+  list-style-type: none;
+  padding: 5px;
+  padding-top: 20vh;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navBarList li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 2vw;
+  font-family: Karma;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(66, 137, 138);
+}
+
+.navBarList li:hover {
+  background-color: rgb(66, 137, 138);
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20vh;
+}
+
+h2 {
+  padding-top: 4vh;
+  font-family: karma;
+  text-align: center;
+  color: rgb(66, 137, 138);
+  letter-spacing: 2px;
+}
+
+h3 {
+  padding-top: 2vh;
+  font-family: karma;
+  text-align: center;
+  color: black;
+  font-size: medium;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#name,
+#email,
+#subject,
+#contactNo {
+  margin-top: 5vh;
+  width: 50vw;
+  height: 5vh;
+  border: none;
+  background-color: white;
+  font-family: Arial;
+  font-size: small;
+}
+
+textarea {
+  margin-top: 5vh;
+  width: 50vw;
+  border: none;
+  background-color: white;
+  font-family: Arial;
+  font-size: small;
+}
+
+.submit {
+  margin-top: 5vh;
+  padding: 2vh 2vw;
+  border: 2px solid rgb(66, 137, 138);
+  border-radius: 25px;
+  font-family: karma;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+}
+
+.submit:hover {
+  background-color: rgb(66, 137, 138);
+  color: white;
+}
+
+footer {
+  height: 12.5vh;
+  background-color: rgb(23, 23, 23);
+  margin-top: 5vh;
+  color: white;
+  text-align: center;
+}
+footer p {
+  padding-top: 2vh;
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+  }
+
+  #name,
+  #email,
+  #contactNo,
+  #subject,
+  textarea {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-form {
+    width: 80%;
+  }
+
+  .submit {
+    padding: 10px 20px;
+    border-radius: 100px;
+  }
+}
